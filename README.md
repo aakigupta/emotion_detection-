@@ -1,2 +1,3 @@
-The provided code is a comprehensive pipeline for audio emotion detection using the RAVDESS dataset. 
-It includes steps for feature extraction, model training (both deep learning and Random Forest Classifier) evaluation, and prediction of emotions from audio files.
+This project focuses on developing a machine learning-based system to detect and classify emotions from human speech using the RAVDESS (Ryerson Audio-Visual Database of Emotional Speech and Song) dataset. The pipeline involves extracting meaningful audio features such as Mel-Frequency Cepstral Coefficients (MFCCs), training machine learning models (e.g., Random Forest, Convolutional Neural Networks), and evaluating their performance for emotion recognition. Finally, the trained model is used to predict emotions in real-time audio files, with visualizations of the audio waveform and playback for better interpretability.
+
+The outcome of this project has applications in areas such as human-computer interaction, mental health monitoring, virtual assistants, and customer service analysis, where understanding emotional cues in speech can provide valuable insights.
