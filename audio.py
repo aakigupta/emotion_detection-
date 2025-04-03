@@ -2,7 +2,7 @@
 import os  
 from IPython.display import Audio, display
 # Replace with the correct path to a valid audio file
-file_path = "C:\\Users\\KIIT\\OneDrive\\Desktop\\DSA\\mini_project\\archive\Actor_01\\03-01-01-01-01-01-01.wav"
+file_path = "C:\\Users\\KIIT\\mini_project\\archive\Actor_01\\03-01-01-01-01-01-01.wav"
 if os.path.isfile(file_path):
     print("File exists and is accessible.")
 else:
@@ -11,7 +11,7 @@ else:
 import sounddevice as sd
 import librosa
 
-file_path = "C:\\Users\\KIIT\\OneDrive\\Desktop\\DSA\\mini_project\\archive\Actor_01\\03-01-01-01-01-01-01.wav"
+file_path = "C:\\Users\\KIIT\\mini_project\\archive\Actor_01\\03-01-01-01-01-01-01.wav"
 audio_path = file_path
 audio_data, sample_rate = librosa.load(audio_path)
 
@@ -33,7 +33,7 @@ def extract_mfcc(file_path, sr=22050, n_mfcc=40):
     return mfccs_mean
 
 # Replace with the path to your dataset
-dataset_path = "C:\\Users\\KIIT\\OneDrive\\Desktop\\DSA\\mini_project\\archive"
+dataset_path = "C:\\Users\\KIIT\\mini_project\\archive"
 
 mfcc_features = []
 
@@ -60,7 +60,7 @@ x, y = np.asarray(x), np.asarray(y)
 
 
 # Define the directory path to save the arrays
-SAVE_DIR_PATH = "C:\\Users\\KIIT\\OneDrive\\Desktop\\DSA\\mini_project\\array"
+SAVE_DIR_PATH = "C:\\Users\\KIIT\\mini_project\\array"
 # Check if the directory exists; if not, create it
 if not os.path.isdir(SAVE_DIR_PATH):
     os.makedirs(SAVE_DIR_PATH)
@@ -295,7 +295,7 @@ def detect_emotion(audio_file_path, model):
 
 
 # Path to the audio file
-audio_file_path = "C:\\Users\\KIIT\\OneDrive\\Desktop\\DSA\\mini_project\\archive\\Actor_01\\03-01-01-01-02-02-01.wav"
+audio_file_path = "C:\\Users\\KIIT\\mini_project\\archive\\Actor_01\\03-01-01-01-02-02-01.wav"
 
 # Detect the emotion
 predicted_emotion = detect_emotion(audio_file_path, clf)
